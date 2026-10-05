@@ -2,6 +2,7 @@
 
 An agent skill that researches existing GitHub projects before you build: **adopt a dependency, extend a whole application, study another implementation, or build the remaining gaps.**
 
+[![Tests](https://github.com/zeekayzeekay/reuse-research/actions/workflows/test.yml/badge.svg)](https://github.com/zeekayzeekay/reuse-research/actions/workflows/test.yml)
 [![MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 ## The problem
