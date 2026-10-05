@@ -132,7 +132,9 @@ class MaterialRepairs(unittest.TestCase):
             self.assertEqual(clock['status'],'active' if fail_save else 'complete')
             if not fail_save:
                 audit=read_json(audit_path);report=(root/'report.md').read_text(encoding='utf-8')
-                self.assertTrue(audit['handoff_complete']); self.assertIn(audit_path.as_posix(),report)
+                self.assertTrue(audit['handoff_complete'])
+                # Windows TEMP may use an 8.3 alias; the report stores the resolved path.
+                self.assertIn(audit_path.resolve().as_posix(),report)
                 self.assertEqual(audit['report_sha256'],hashlib.sha256(report.encode()).hexdigest())
 
     def test_other_hosts_do_not_create_canonical_github_candidates(self):
