@@ -55,16 +55,7 @@ No extra model API, paid search service, backend or MCP server is required. The 
 
 ## Use
 
-In Codex, request the skill explicitly:
-
-```text
-Use $reuse-research before implementing this feature.
-Find whole solutions and complementary components, retain useful cross-stack
-references, inspect behavior that could change our plan, and recommend what
-to adopt, adapt, study or build.
-```
-
-For other agents, ask them to use the `reuse-research` skill. Include your goal and any constraints that matter. For example:
+In Codex, Claude Code or another skill-capable agent, ask it to use the `reuse-research` skill. Include your goal and any constraints that matter. For example:
 
 ```text
 Use the reuse-research skill to research a YouTube/Instagram knowledge extractor.
