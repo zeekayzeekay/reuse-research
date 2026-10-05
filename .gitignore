@@ -1,0 +1,21 @@
+.research/
+.firecrawl/
+# Historical pilot reports and raw evaluation inputs stay local.
+evals/
+# Agent installs and reports created while using the skill.
+.agents/
+.claude/
+.codex/
+.reuse-research/
+skills-lock.json
+# Local environments, credentials and generated files.
+.venv/
+venv/
+node_modules/
+.env
+.env.*
+!.env.example
+__pycache__/
+*.py[cod]
+.DS_Store
+Thumbs.db
